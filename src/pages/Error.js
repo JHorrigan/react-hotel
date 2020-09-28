@@ -1,9 +1,6 @@
 import React from 'react'
+import Hero from '../components/Hero';
 
 export default function Error() {
-    return (
-        <div>
-            Message from Error Page
-        </div>
-    )
+    return <Hero />
 }
