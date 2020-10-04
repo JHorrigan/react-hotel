@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
 
-export default class Context extends Component {
+const RoomContext = React.createContext();
+
+export default class RoomProvider extends Component {
     render() {
         return (
-            <div>
-                
-            </div>
+            <RoomConext.Provider value="From Room Provider">
+                {this.props.children}
+            </RoomConext.Provider>
         )
     }
 }
