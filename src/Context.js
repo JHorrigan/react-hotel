@@ -5,7 +5,7 @@ const RoomContext = React.createContext();
 class RoomProvider extends Component {
     render() {
         return (
-            <RoomContext.Provider value="From Room Provider">
+            <RoomContext.Provider value={"From Room Provider"}>
                 {this.props.children}
             </RoomContext.Provider>
         )
