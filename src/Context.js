@@ -11,6 +11,10 @@ class RoomProvider extends Component {
         loading: true
     }
 
+    componentDidMount () {
+        let rooms = this.formatData(items)
+    }
+
     render() {
         return (
             <RoomContext.Provider value={{...this.state}}>
