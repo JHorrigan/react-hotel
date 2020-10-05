@@ -8,6 +8,10 @@ export default function Room({room}) {
         <article className="room">
             <div className="img-container">
                 <img src={images[0] || defaultImg} alt="Single Room" />
+                <div className="price-top">
+                    <h6>£{price}</h6>
+                    <p>per night</p>
+                </div>
             </div>
         </article>
     )
