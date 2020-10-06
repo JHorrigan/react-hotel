@@ -11,12 +11,12 @@ export default class SingleRoom extends Component {
         super(props)
         //console.log(this.props);
         this.state = {
-            slug: this.props.params.slug,
+            slug: this.props.match.params.slug,
             defaultBcg,
         };
     }
 
-    static contextType = RoomContext
+    static contextType = RoomContext;
 
     // Without context we would use slug in props
     // from router to make API call
