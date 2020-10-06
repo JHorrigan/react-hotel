@@ -27,10 +27,17 @@ export default class SingleRoom extends Component {
     render() {
         const { getRoom } = this.context;
         const room = getRoom(this.state.slug);
-        console.log(room);
+        if(!room) {
+            return <div className="error">
+                <h3>No such room could be found...</h3>
+                <Link to="/rooms" className="btn-primary">
+                    Back to rooms
+                </Link>
+            </div>
+        }
         return (
             <div>
-                Message from Single Room Page
+                Message from Single Room Page {room.id}
             </div>
         )
     }
