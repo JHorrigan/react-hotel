@@ -16,6 +16,8 @@ export default class SingleRoom extends Component {
         };
     }
 
+    static contextType = RoomContext
+
     // Without context we would use slug in props
     // from router to make API call
     //componentDidMount() {
@@ -23,6 +25,9 @@ export default class SingleRoom extends Component {
     //}
 
     render() {
+        const { getRoom } = this.context;
+        const room = getRoom(this.state.slug);
+        console.log(room);
         return (
             <div>
                 Message from Single Room Page
