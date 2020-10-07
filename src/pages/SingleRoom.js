@@ -36,8 +36,18 @@ export default class SingleRoom extends Component {
             </div>
         }
 
-        const { name, description, capacity, size, price,
-        extras, breakfast, pets, images } = room
+        const {
+            name,
+            description,
+            capacity,
+            size,
+            price,
+            extras,
+            breakfast,
+            pets,
+            images
+        } = room
+
         return (
             <Hero hero="roomsHero">
                 <Banner title={`${name} room`}>
