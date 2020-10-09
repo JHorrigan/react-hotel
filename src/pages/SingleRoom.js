@@ -81,6 +81,9 @@ export default class SingleRoom extends Component {
                         {capacity > 1 ? `${capacity} People` :
                         `${capacity} Person`}
                     </h6>
+                    <h6>
+                        {pets ? "Pets Allowed" : "No Pets Allowed"}
+                    </h6>
                     </article>
                 </div>
             </section>
