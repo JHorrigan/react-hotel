@@ -67,6 +67,36 @@ export default class SingleRoom extends Component {
                         <img key={index} src={item} alt={name}/>
                     ))}
                 </div>
+                <div className="single-room-info">
+                    <article className="desc">
+                        <h3>Details</h3>
+                    <p>{description}</p>
+                    </article>
+                    <article className="info">
+                        <h3>Info</h3>
+                    <h6>Price : £{price}</h6>
+                    <h6>Size : £{size} SQFT</h6>
+                    <h6>
+                        Max Capacity: {" "}
+                        {capacity > 1 ? `${capacity} People` :
+                        `${capacity} Person`}
+                    </h6>
+                    <h6>
+                        {pets ? "Pets Allowed" : "No Pets Allowed"}
+                    </h6>
+                    <h6>
+                        {breakfast && "Free Breakfast Included"}
+                    </h6>
+                    </article>
+                </div>
+            </section>
+            <section className="room-extras">
+                <h6>Extras</h6>
+                <ul className="extras">
+                    {extras.map((item, index) => {
+                        return <li key={index}>- {item}</li>;
+                    })}
+                </ul>
             </section>
             </>
         )
