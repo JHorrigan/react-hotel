@@ -84,6 +84,9 @@ export default class SingleRoom extends Component {
                     <h6>
                         {pets ? "Pets Allowed" : "No Pets Allowed"}
                     </h6>
+                    <h6>
+                        {breakfast && "Free Breakfast Included"}
+                    </h6>
                     </article>
                 </div>
             </section>
