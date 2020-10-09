@@ -76,6 +76,11 @@ export default class SingleRoom extends Component {
                         <h3>Info</h3>
                     <h6>Price : £{price}</h6>
                     <h6>Size : £{size} SQFT</h6>
+                    <h6>
+                        Max Capacity: {" "}
+                        {capacity > 1 ? `${capacity} People` :
+                        `${capacity} Person`}
+                    </h6>
                     </article>
                 </div>
             </section>
