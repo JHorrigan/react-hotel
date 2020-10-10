@@ -9,6 +9,7 @@ export default function RoomsContainer() {
         <RoomConsumer>
             {
                 (value) => {
+                    const {loading, sortedRooms, rooms} = value;
                     return (
                         <div>
                             Message from Rooms Container
