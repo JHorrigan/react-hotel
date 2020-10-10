@@ -11,8 +11,12 @@ export default function RoomsList({rooms}) {
         )
     }
     return (
-        <div>
-            Message from Rooms List
-        </div>
+        <section className="roomslist">
+            <div className="roomslist-center">
+                {rooms.map(item => {
+                    return <Room key={item.id} room={item} />
+                })}
+            </div>
+        </section>
     )
 }
