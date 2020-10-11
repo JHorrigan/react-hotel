@@ -70,7 +70,10 @@ class RoomProvider extends Component {
     }
 
     filterRooms = () => {
-        console.log('Message from filterRooms');
+        let {
+            rooms, type, capacity, price, minSize,
+            maxSize, breakfast, pets;
+        } = this.state
     };
 
     render() {
