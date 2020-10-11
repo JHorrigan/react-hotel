@@ -14,6 +14,7 @@ export default function RoomsFilter({rooms}) {
         minPrice, maxPrice, minSize, maxSize,
         breakfast, pets
     } = context
+
     // get unique types
     let types = getUnique(rooms, 'type')
     // add all option to types
@@ -22,6 +23,14 @@ export default function RoomsFilter({rooms}) {
     types = types.map((item, index) => {
         return <option value={item} key={index}>{item}</option>
     })
+
+    // get unique capacity
+    let people = getUnique(rooms, 'capacity')
+    // map to jsx
+    people = people.map((item, index) => {
+        return <option value={item} key={index}>{item}</option>
+    })
+
     return (
         <section className="filter-container">
             <Title title="Search Rooms" />
