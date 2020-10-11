@@ -79,6 +79,16 @@ export default function RoomsFilter({rooms}) {
                     </div>
                 </div>
                 {/* End of room size */}
+                {/* Start extras */}
+                <div className="form-group">
+                    <div className="single-extra">
+                        <input type="checkbox" name="breakfast"
+                        id="breakfast" checked={breakfast}
+                        onChange={handleChange} />
+                        <label htmlFor="breakfast">Breakfast</label>
+                    </div>
+                </div>
+                {/* End of extras */}
             </form>
         </section>
     )
