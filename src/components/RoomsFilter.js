@@ -26,6 +26,7 @@ export default function RoomsFilter({rooms}) {
         <section className="filter-container">
             <Title title="Search Rooms" />
             <form className="filter-form">
+                {/* Start select type */}
                 <div className="form-group">
                     <label htmlFor="type">Room Type</label>
                     <select name="type" id="type"
@@ -34,6 +35,7 @@ export default function RoomsFilter({rooms}) {
                         {types}
                     </select>
                 </div>
+                {/* End select type */}
             </form>
         </section>
     )
