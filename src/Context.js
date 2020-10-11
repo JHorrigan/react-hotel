@@ -106,6 +106,12 @@ class RoomProvider extends Component {
             === true)
         }
 
+        // Filter by pets extra
+        if(pets) {
+            tempRooms = tempRooms.filter(room => room.pets
+            === true)
+        }
+
         // Change state
         this.setState({
             sortedRooms: tempRooms
